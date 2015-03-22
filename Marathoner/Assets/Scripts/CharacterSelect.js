@@ -44,6 +44,7 @@ if (Input.GetMouseButtonUp (0)) {
 
 function SelectedCharacter1() {
 				Debug.Log ("Character 1 SELECTED"); //Print out in the Unity console which character was selected.
+				Application.LoadLevel("Character1Scenes");
 				character1Glow.renderer.enabled = true; //these lines turn on or off the appropriate character glow.
 				character2Glow.renderer.enabled = false;
 				character3Glow.renderer.enabled = false;
@@ -52,6 +53,7 @@ function SelectedCharacter1() {
 
 function SelectedCharacter2() {
 				Debug.Log ("Character 2 SELECTED");
+				Application.LoadLevel("Character2Scenes");
 				character2Glow.renderer.enabled = true;
 				character1Glow.renderer.enabled = false;
 				character3Glow.renderer.enabled = false;
@@ -60,6 +62,7 @@ function SelectedCharacter2() {
 
 function SelectedCharacter3() {
 				Debug.Log ("Character 3 SELECTED");
+				Application.LoadLevel("Character3Scenes");
 				character3Glow.renderer.enabled = true;
 				character1Glow.renderer.enabled = false;
 				character2Glow.renderer.enabled = false;
@@ -68,6 +71,7 @@ function SelectedCharacter3() {
 
 function SelectedCharacter4() {
 				Debug.Log ("Character 4 SELECTED");
+				Application.LoadLevel("Character4Scenes");
 				character4Glow.renderer.enabled = true;
 				character3Glow.renderer.enabled = false;
 				character2Glow.renderer.enabled = false;
